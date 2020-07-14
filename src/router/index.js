@@ -7,6 +7,7 @@ const userinfo = ()=>import('@/views/UserInfo.vue')
 const edit = ()=>import('@/views/Edit.vue')
 const article = ()=>import('@/views/Article.vue')
 const editcategory = ()=>import('@/views/EditCategory.vue')
+const search = ()=>import('@/views/Search.vue')
 Vue.use(VueRouter)
   const routes = [
      {
@@ -42,10 +43,15 @@ Vue.use(VueRouter)
        path:'/article/:id',
        component:article
      },
+     {
+      path:'/search',
+      component:search
+    },
     {
       path:'/editcategory',
       component:editcategory
-    }
+    },
+   
   ]
 
 const router = new VueRouter({

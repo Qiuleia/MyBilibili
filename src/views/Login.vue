@@ -5,7 +5,7 @@
       </login-top>
   <van-form validate-first>
         <login-text label="账号" 
-        placeholder="请输入账号"
+        placeholder="请输入（4-8位字母数字）账号"
          @contentWatch="res => model.username = res"
           rule=/\d{4,8}/
          style="margin:4.167vw 0"
@@ -13,7 +13,7 @@
         </login-text>
 
         <login-text label="密码" 
-            placeholder="请输入密码" 
+            placeholder="请输入（4-8位字母数字）密码" 
             type="password"
               rule=/\d{4,8}/
             @contentWatch="res => model.password = res"

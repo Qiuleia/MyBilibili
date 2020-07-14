@@ -3,12 +3,14 @@
       <nav-bar></nav-bar> 
       <div class="detailinfo">
          <div class="video">
-              <video controls="controls" :src="model.content"></video>
+              <video controls="controls" preload="true" :src="model.content"></video>
          </div>
          <div class="detailinfoText">
               <div>
                   <span>{{model.category.title}}</span>
-                  <span>{{model.name}}</span>
+                  <!-- <span>{{model.name}}</span> -->
+                  <span v-if="!$route.query.name">{{model.name}}</span>
+                  <span v-else>{{$route.query.name}}</span>
               </div>
               <div>
                   <span>{{model.userinfo.name}}</span>

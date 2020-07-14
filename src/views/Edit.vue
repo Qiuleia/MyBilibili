@@ -32,7 +32,7 @@
          @confirm="confirmClick"
             @cancel="content = ''"
            >
-          <van-field v-model="content"  autofocus />
+          <van-field class="input" v-model="content"  autofocus />
       </van-dialog>
 
 
@@ -43,7 +43,7 @@
          @confirm="textareaClick"
          @cancel="content = ''"
           >
-          <van-field v-model="content" type="textarea" autofocus=true />
+          <van-field  class="input" v-model="content" type="textarea" autofocus=true />
       </van-dialog>
     
 
@@ -142,5 +142,11 @@ export default {
     padding: 4.167vw 0;
     font-size: 4vw;
     cursor: pointer;
+}
+.input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 </style>

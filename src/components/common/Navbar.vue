@@ -4,7 +4,7 @@
           <img src="@/assets/logo.png" alt="" @click="$router.push('/')">
       </div>
       <div>
-          <div @click="$router.push('/login')"> <van-icon name="search" class="iconNav"/></div>
+          <div @click="$router.push('/search')"> <van-icon name="search" class="iconNav"/></div>
       </div>
       <div>
           <img :src="imgUrl" alt="" @click="$router.push('/userinfo')" v-if="imgUrl">
@@ -62,6 +62,7 @@ export default {
             width: 100%;
             border-radius: 3.333vw;
               position: relative;
+              cursor: pointer;
               .iconNav{
                   color: #aaa;
                   position: absolute;

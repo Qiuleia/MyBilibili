@@ -2,7 +2,7 @@
   <div @click="pathPush" v-if="detailitem">
       <div class="detailItem">
           <div class="imgparent">
-               <img :src="detailitem.img"  alt="" style="width:100%;height:27.778vw;">
+               <img :src="detailitem.img"  alt="" style="width:100%;height:27.778vw;" referrerpolicy="no-referrer">
               <div class="bottom">
                   <div class="icon-play2"><span class="video">1233</span></div>
                   <div class="icon-file-text"> <span class="comment">{{!detailitem.commentlen ? 66 : detailitem.commentlen}}</span> </div>
@@ -33,7 +33,6 @@ export default {
         padding: 0.833vw 0;
     }
     .imgparent{
-         cursor: pointer;
         position: relative;
          .bottom{
             padding: 0 2.778vw;

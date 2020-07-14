@@ -7,18 +7,18 @@
     <login-text
       label="姓名"
       style="margin:15.001px 0;"
-      placeholder="请输入姓名"
+      placeholder="请输入(2-8位字)姓名"
      rule=/.{2,8}/
       @contentWatch="res => model.name = res"
     ></login-text>
 
     <login-text label="账号" 
-         placeholder="请输入账号" 
+         placeholder="请输入（4-8位字母数字）账号" 
         rule=/[\d|\w]{4,8}/
           @contentWatch="res => model.username = res"
     ></login-text>
     <login-text label="密码" 
-            placeholder="请输入密码" 
+            placeholder="请输入（4-8位字母数字）密码" 
             type="password"
             rule=/[\d|\w]{4,8}/
             @contentWatch="res => model.password = res"
